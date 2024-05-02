@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* 전체 앱 컨테이너 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 메모 폼 스타일 */
+.memo-form {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.memo-form input,
+.memo-form textarea,
+.memo-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.memo-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.memo-form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 메모 리스트 스타일 */
+.memo {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.memo h3 {
+  margin-top: 0;
+}
+
+.memo p {
+  margin-bottom: 5px;
+}
+
+.memo button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.memo button:hover {
+  background-color: #c82333;
+}
+
+/* 검색 바 스타일 */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #218838;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #e0a800;
 }
